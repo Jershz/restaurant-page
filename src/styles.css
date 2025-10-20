@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header-nav {
+    padding: 10px;
+    height: 10vh;
+    width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+    background-color: azure;
+}
+
+#home,
+#menu,
+#about {
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    width: 150px;
+}
+
+#content {
+    width: 800px;
+    background-color: cadetblue;
+    margin: 0 auto;
+}
