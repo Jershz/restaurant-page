@@ -4,17 +4,42 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    background-image: url("./big-burger.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 30%;
+}
 
-
-.header-nav {
-    padding: 10px;
-    height: 10vh;
-    width: 800px;
-    margin: 0 auto;
-    gap: 10px;
-    text-align: center;
-    align-content: center;
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
     background-color: azure;
+    opacity: 50%;
+    height: 20vh;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+}
+
+.header-nav { 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 800px;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: center;    
+    background-color: azure;
+}
+
+.background-img {
+    
 }
 
 #home,
@@ -22,8 +47,18 @@
 #about {
     border: none;
     border-radius: 8px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 150px;
+    background-color: azure;
+    opacity: 50%;
+    color: black;
+}
+
+#home:hover,
+#menu:hover,
+#about:hover {
+    opacity: 100%;
+    text-decoration: underline;
 }
 
 #content {

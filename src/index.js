@@ -2,6 +2,7 @@ import "./styles.css";
 import { CreateHomePage } from "./home.js";
 import { CreateMenuPage } from "./menu.js";
 import { CreateAboutPage } from "./about.js";
+import bigBurger from "./big-burger.jpeg"
 
 function InitializeNavHeader() {
     const contentBody = document.querySelector("#content");
@@ -9,6 +10,13 @@ function InitializeNavHeader() {
     const menuButton = document.querySelector("#menu");
     const aboutButton = document.querySelector("#about");
 
+    function initializePage() {
+        // let backgroundImg = document.createElement("img");
+        // backgroundImg.src = bigBurger;
+        // backgroundImg.classList.add("background-img");
+        // document.body.appendChild(backgroundImg);
+        bindEvents();
+    }
     function bindEvents() {
         homeButton.addEventListener("click", homeButtonClick);
         menuButton.addEventListener("click", menuButtonClick);
@@ -30,7 +38,7 @@ function InitializeNavHeader() {
         contentBody.textContent = "";
     }
 
-    bindEvents();
+    initializePage();
 }
 
 InitializeNavHeader();
